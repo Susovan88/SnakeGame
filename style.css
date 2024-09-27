@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Bungee Tint", sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: url("bg.webp");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    font-size: 50px; 
+    padding: 10px;
+    background-color: rgb(18, 18, 18); 
+    margin: 20px;
+    border: 5px solid white;
+}
+.points{
+    width: 350px;
+    height: 150px;
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 20px;
+    align-self: start;
+    margin: 20px;
+    border: 5px solid white;
+}
+.pointsStyle{
+    font-size: 20px;
+    font-weight: 600;
+}
+#board{
+    background: linear-gradient(rgb(19, 19, 19),rgb(44, 44, 44));
+    width: 80vmin;
+    height: 80vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+    border: 5px solid white;
+}
+.head{
+    background-color: rgb(0, 255, 26);
+    border: 2px solid white;
+    transform: scale(1.02);
+    border-radius: 10px;
+}
+.snake{
+    background-color: rgb(16, 214, 36);
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.food{
+    background:linear-gradient(red,brown);
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.hide{
+    display: none;
+}
+.GameOver{
+    font-size:50px ;
+}
+.start{
+    height: 60px;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: black;
+    background-color: rgb(127, 175, 6);
+}
